@@ -10,15 +10,23 @@ This project aims to predict the Customer Lifetime Value (CLTV) using customer p
 
 ## 📂 Dataset Information
 Source: Kaggle — Ecommerce Data
+
 Dataset Name: UK Online Retail Dataset (2010–2011)
+
 File Used: data.csv
+
 Size: ~540,000 transactions
 ### Columns Used:
 InvoiceNo: Unique Order ID
+
 CustomerID: Unique Customer Identifier
+
 InvoiceDate: Date of transaction
+
 Quantity: Units purchased
+
 UnitPrice: Price per unit (in GBP)
+
 Country: Customer's Country
 
 ## 🧹 Data Cleaning Steps
@@ -37,19 +45,27 @@ Filtered Country (Optional):nKept only customers from United Kingdom (optional s
 
 ## 🤖 Modeling Approach
 
-Algorithm Used: XGBoost Regressor
-Train/Test Split: 80% Training, 20% Testing
-Evaluation Metrics:
-Mean Absolute Error (MAE)
-Root Mean Squared Error (RMSE)
+- Algorithm Used: XGBoost Regressor
+
+- Train/Test Split: 80% Training, 20% Testing
+
+- Evaluation Metrics:
+
+- Mean Absolute Error (MAE)
+
+- Root Mean Squared Error (RMSE)
 
 ## 🎯 Customer Segmentation
 - Post-prediction, customers were segmented into 4 LTV tiers: 
 Low
+
 Medium
+
 High
+
 Very High
- Segmentation was done using quartile-based binning (qcut) on predicted LTV scores.
+ 
+- Segmentation was done using quartile-based binning (qcut) on predicted LTV scores.
 
 ## 📈 Visualizations Created
 - LTV Distribution Histogram
